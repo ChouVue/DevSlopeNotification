@@ -14,6 +14,7 @@
 		53EAF2892019464D00B20BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EAF2882019464D00B20BF0 /* Assets.xcassets */; };
 		53EAF28C2019464D00B20BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EAF28A2019464D00B20BF0 /* LaunchScreen.storyboard */; };
 		53EAF2972019464D00B20BF0 /* DevSlopeNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EAF2962019464D00B20BF0 /* DevSlopeNotificationTests.swift */; };
+		53EAF2A2201955A200B20BF0 /* rick_grimes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 53EAF2A1201955A200B20BF0 /* rick_grimes.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		53EAF2922019464D00B20BF0 /* DevSlopeNotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevSlopeNotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EAF2962019464D00B20BF0 /* DevSlopeNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevSlopeNotificationTests.swift; sourceTree = "<group>"; };
 		53EAF2982019464D00B20BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53EAF2A1201955A200B20BF0 /* rick_grimes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rick_grimes.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				53EAF2822019464D00B20BF0 /* Main.storyboard */,
 				53EAF2882019464D00B20BF0 /* Assets.xcassets */,
 				53EAF28A2019464D00B20BF0 /* LaunchScreen.storyboard */,
+				53EAF2A1201955A200B20BF0 /* rick_grimes.gif */,
 				53EAF28D2019464D00B20BF0 /* Info.plist */,
 				53EAF2852019464D00B20BF0 /* DevSlopeNotification.xcdatamodeld */,
 			);
@@ -184,6 +187,7 @@
 			files = (
 				53EAF28C2019464D00B20BF0 /* LaunchScreen.storyboard in Resources */,
 				53EAF2892019464D00B20BF0 /* Assets.xcassets in Resources */,
+				53EAF2A2201955A200B20BF0 /* rick_grimes.gif in Resources */,
 				53EAF2842019464D00B20BF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
