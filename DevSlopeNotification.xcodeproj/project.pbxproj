@@ -15,6 +15,11 @@
 		53EAF28C2019464D00B20BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EAF28A2019464D00B20BF0 /* LaunchScreen.storyboard */; };
 		53EAF2972019464D00B20BF0 /* DevSlopeNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EAF2962019464D00B20BF0 /* DevSlopeNotificationTests.swift */; };
 		53EAF2A2201955A200B20BF0 /* rick_grimes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 53EAF2A1201955A200B20BF0 /* rick_grimes.gif */; };
+		53F97214201A9EC000D9142A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F97213201A9EC000D9142A /* UserNotifications.framework */; };
+		53F97216201A9EC000D9142A /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F97215201A9EC000D9142A /* UserNotificationsUI.framework */; };
+		53F97219201A9EC000D9142A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F97218201A9EC000D9142A /* NotificationViewController.swift */; };
+		53F9721C201A9EC000D9142A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F9721A201A9EC000D9142A /* MainInterface.storyboard */; };
+		53F97220201A9EC000D9142A /* myContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 53F97211201A9EC000D9142A /* myContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +30,28 @@
 			remoteGlobalIDString = 53EAF27A2019464D00B20BF0;
 			remoteInfo = DevSlopeNotification;
 		};
+		53F9721E201A9EC000D9142A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53EAF2732019464D00B20BF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53F97210201A9EC000D9142A;
+			remoteInfo = myContentExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		53F97224201A9EC000D9142A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				53F97220201A9EC000D9142A /* myContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		53EAF27B2019464D00B20BF0 /* DevSlopeNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevSlopeNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +66,12 @@
 		53EAF2962019464D00B20BF0 /* DevSlopeNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevSlopeNotificationTests.swift; sourceTree = "<group>"; };
 		53EAF2982019464D00B20BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53EAF2A1201955A200B20BF0 /* rick_grimes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rick_grimes.gif; sourceTree = "<group>"; };
+		53F97211201A9EC000D9142A /* myContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = myContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F97213201A9EC000D9142A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		53F97215201A9EC000D9142A /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		53F97218201A9EC000D9142A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		53F9721B201A9EC000D9142A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		53F9721D201A9EC000D9142A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +89,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53F9720E201A9EC000D9142A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F97216201A9EC000D9142A /* UserNotificationsUI.framework in Frameworks */,
+				53F97214201A9EC000D9142A /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +106,8 @@
 			children = (
 				53EAF27D2019464D00B20BF0 /* DevSlopeNotification */,
 				53EAF2952019464D00B20BF0 /* DevSlopeNotificationTests */,
+				53F97217201A9EC000D9142A /* myContentExtension */,
+				53F97212201A9EC000D9142A /* Frameworks */,
 				53EAF27C2019464D00B20BF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +117,7 @@
 			children = (
 				53EAF27B2019464D00B20BF0 /* DevSlopeNotification.app */,
 				53EAF2922019464D00B20BF0 /* DevSlopeNotificationTests.xctest */,
+				53F97211201A9EC000D9142A /* myContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +146,25 @@
 			path = DevSlopeNotificationTests;
 			sourceTree = "<group>";
 		};
+		53F97212201A9EC000D9142A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F97213201A9EC000D9142A /* UserNotifications.framework */,
+				53F97215201A9EC000D9142A /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53F97217201A9EC000D9142A /* myContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				53F97218201A9EC000D9142A /* NotificationViewController.swift */,
+				53F9721A201A9EC000D9142A /* MainInterface.storyboard */,
+				53F9721D201A9EC000D9142A /* Info.plist */,
+			);
+			path = myContentExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,10 +175,12 @@
 				53EAF2772019464D00B20BF0 /* Sources */,
 				53EAF2782019464D00B20BF0 /* Frameworks */,
 				53EAF2792019464D00B20BF0 /* Resources */,
+				53F97224201A9EC000D9142A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				53F9721F201A9EC000D9142A /* PBXTargetDependency */,
 			);
 			name = DevSlopeNotification;
 			productName = DevSlopeNotification;
@@ -140,6 +205,23 @@
 			productReference = 53EAF2922019464D00B20BF0 /* DevSlopeNotificationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		53F97210201A9EC000D9142A /* myContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F97223201A9EC000D9142A /* Build configuration list for PBXNativeTarget "myContentExtension" */;
+			buildPhases = (
+				53F9720D201A9EC000D9142A /* Sources */,
+				53F9720E201A9EC000D9142A /* Frameworks */,
+				53F9720F201A9EC000D9142A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myContentExtension;
+			productName = myContentExtension;
+			productReference = 53F97211201A9EC000D9142A /* myContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +241,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 53EAF27A2019464D00B20BF0;
 					};
+					53F97210201A9EC000D9142A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 53EAF2762019464D00B20BF0 /* Build configuration list for PBXProject "DevSlopeNotification" */;
@@ -176,6 +262,7 @@
 			targets = (
 				53EAF27A2019464D00B20BF0 /* DevSlopeNotification */,
 				53EAF2912019464D00B20BF0 /* DevSlopeNotificationTests */,
+				53F97210201A9EC000D9142A /* myContentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F9720F201A9EC000D9142A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F9721C201A9EC000D9142A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +315,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53F9720D201A9EC000D9142A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F97219201A9EC000D9142A /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -227,6 +330,11 @@
 			isa = PBXTargetDependency;
 			target = 53EAF27A2019464D00B20BF0 /* DevSlopeNotification */;
 			targetProxy = 53EAF2932019464D00B20BF0 /* PBXContainerItemProxy */;
+		};
+		53F9721F201A9EC000D9142A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53F97210201A9EC000D9142A /* myContentExtension */;
+			targetProxy = 53F9721E201A9EC000D9142A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -245,6 +353,14 @@
 				53EAF28B2019464D00B20BF0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		53F9721A201A9EC000D9142A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F9721B201A9EC000D9142A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -348,6 +464,7 @@
 		53EAF29C2019464D00B20BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevSlopeNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -360,6 +477,7 @@
 		53EAF29D2019464D00B20BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevSlopeNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -397,6 +515,30 @@
 			};
 			name = Release;
 		};
+		53F97221201A9EC000D9142A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VUE.DevSlopeNotification.myContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53F97222201A9EC000D9142A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VUE.DevSlopeNotification.myContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,12 +558,22 @@
 				53EAF29D2019464D00B20BF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53EAF29E2019464D00B20BF0 /* Build configuration list for PBXNativeTarget "DevSlopeNotificationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53EAF29F2019464D00B20BF0 /* Debug */,
 				53EAF2A02019464D00B20BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F97223201A9EC000D9142A /* Build configuration list for PBXNativeTarget "myContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F97221201A9EC000D9142A /* Debug */,
+				53F97222201A9EC000D9142A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
